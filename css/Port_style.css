@@ -1,0 +1,93 @@
+/*Port_style.css
+Separate stylesheet just in case anything with the portfolio needs to be different*/
+
+/* header to stand out from rest of page*/
+h1 {
+    color: #ff0000;
+    background-color: #000000;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Style the navigation bar, horizontal*/
+nav {
+    background-color: #ff0000;
+    overflow: hidden;
+}
+
+nav a {
+    float:left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    background-color: #dddddd;
+    color: #000000;
+  }
+  
+/*basic styling for page content. Keep things consistent, somewhat minimalistic*/  
+p {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+div {
+    padding:20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*pseudo-darkmode, helps colors pop and subdues background*/
+body {
+    background-color: #000000;
+}
+
+/* Responsive css for text size, essentially an if-then statement */
+@media screen and (min-width: 900px) {
+    p {
+        font-size: 24px;
+    }
+
+    div {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    p {
+        font-size: 18px;
+    }
+
+    div {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    p {
+        font-size: 14px;
+    }
+
+    div {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
